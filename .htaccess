@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteRule ^tenants$ pages/tenants.php [NC,L]
+RewriteRule ^rooms$ pages/rooms.php [NC,L]
+RewriteRule ^bookings$ pages/bookings.php [NC,L]
+RewriteRule ^payments$ pages/payments.php [NC,L]
+RewriteRule ^bills$ pages/bills.php [NC,L]
+RewriteRule ^maintenance$ pages/maintenance.php [NC,L]
+RewriteRule ^employees$ pages/employees.php [NC,L]
+RewriteRule ^rental_contracts$ pages/rental_contracts.php [NC,L]

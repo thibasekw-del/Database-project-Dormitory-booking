@@ -1,0 +1,149 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #4CAF50;
+    padding: 20px;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #4CAF50;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    background-color: #45a049;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+/* Print Styles */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #receipt, #receipt * {
+        visibility: visible;
+    }
+    #receipt {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+/* General styling for the sidebar */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: white;
+    padding-top: 20px;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+
+.sidebar-header h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    padding: 15px 25px;
+    border-bottom: 1px solid #444;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.nav-list li a:hover {
+    background-color: #575757;
+}
+
+.nav-list li a i {
+    margin-right: 10px;
+}
+
+/* For responsive design (toggle the sidebar in mobile view) */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+}
